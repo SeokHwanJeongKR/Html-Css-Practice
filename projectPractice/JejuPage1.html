@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 검색</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            padding: 20px;
+        }
+        .search-section {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .search-section h1 {
+            font-size: 24px;
+            color: #1a3a7c;
+        }
+        .search-section p {
+            color: #666;
+            margin: 10px 0;
+        }
+        .search-input {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-input input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-input button {
+            padding: 10px 20px;
+            background-color: #1a3a7c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+        .stats div {
+            text-align: center;
+            color: #1a3a7c;
+        }
+        .stats div p {
+            margin: 5px 0 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .carousel-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .carousel-content {
+            width: 90%;
+            max-width: 400px;
+            background-color: #f5f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .carousel-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .carousel-content button {
+            background-color: #1a3a7c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-section">
+            <h1>데이터 검색</h1>
+            <p>제주의 정보를 제주데이터허브에서 확인하세요.<br>다양한 키워드로 쉽게 데이터를 검색하고 활용할 수 있습니다.</p>
+            <div class="search-input">
+                <input type="text" placeholder="키워드를 입력하세요.">
+                <button>검색</button>
+            </div>
+            <div class="stats">
+                <div>
+                    <p>1257</p>
+                    <span>데이터</span>
+                </div>
+                <div>
+                    <p>89</p>
+                    <span>인포그래픽</span>
+                </div>
+                <div>
+                    <p>67</p>
+                    <span>정기리포트</span>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-section">
+            <div class="carousel-content">
+                <img src="https://via.placeholder.com/300x150" alt="데이터 추이 이미지">
+                <h3>데이터 추이 변화 영상으로 한눈에</h3>
+                <a href="#" class="carousel-button">영상 인포그래픽 바로가기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
